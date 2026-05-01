@@ -163,7 +163,7 @@ const guias = { //cria o objeto guias
 
 <p>No geral, o Ladino é ideal para jogadores que gostam de um estilo de jogo rápido, estratégico e baseado em precisão, sendo capaz de eliminar inimigos antes mesmo que eles consigam reagir.</p>`
     },
-    cacador: {
+    cacador: {  
         titulo: "Caçador",
         texto: `<p>O Caçador é uma classe de dano físico à distância em World of Warcraft, especializada no uso de armas como arcos, bestas e armas de fogo, além de contar com a ajuda de um companheiro animal em combate. Na expansão Wrath of the Lich King (3.3.5), o Caçador se destaca por sua mobilidade, dano consistente e facilidade de jogo, sendo uma excelente escolha tanto para iniciantes quanto para jogadores experientes. Utilizando mana como recurso principal, ele combina ataques à distância com habilidades utilitárias e controle.</p>
 
@@ -181,4 +181,4 @@ const guias = { //cria o objeto guias
 
 <p>No geral, o Caçador é ideal para jogadores que gostam de atacar à distância com mobilidade, contar com um companheiro animal e utilizar estratégias de controle para dominar o campo de batalha.</p>`
     }
-};
+}    
