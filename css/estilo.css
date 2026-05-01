@@ -1,0 +1,150 @@
+/* Reset básico , Isso evita comportamento estranho entre navegadores. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+/* ===== PAGINA INDEX ===== */
+
+/* Estilo base do site */
+body {
+    background: radial-gradient(circle at top, #021223, #021229 70%);
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+}
+
+/* Header (topo estilo WoW) */
+header {
+    height: 580px;
+    background-image: url("../imagens/banner02.png");
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    position: relative;
+
+    /*background: linear-gradient(to right, #102820, #1a3d35);*/
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #80b7e1;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+}
+
+/* Menu (nav) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c8e6c9;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after { /* Cria uma linha invisivel */
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, #80b7e1, #021223);
+    transition: 0.3s;
+}
+
+nav a:hover::after { /* No hover ela cresce */
+    width: 100%;
+}
+
+/* Main (conteúdo) */
+main {
+    padding: 40px 20px;
+}
+
+
+
+/* Seção de apresentação */
+.apresentacao {
+    max-width: 800px;
+    margin: auto;
+    background-color: #021223;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(143, 152, 233, 0.2);
+    transition: 0.3s;
+    animation: flutuar 6s ease-in-out infinite;
+}
+
+.apresentacao:hover {
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.6)
+} 
+
+@keyframes flutuar { /* Efeito flutuar */
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+}
+
+.apresentacao h2 {
+    color: #80b7e1;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Rodapé (footer) */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #021223;
+    border-top: 2px solid #80b7e1;
+    margin-top: 250px
+}
+
+/* ===== PAGINA GUIAS ===== */
+.pagina-guias #conteudo {
+    margin-top: 20px;
+}
+
+.pagina-guias #conteudo h3 {
+    color:#80b7e1;
+}
+
+.pagina-guias .destaque {
+    color: #80b7e1;
+}
+
+.pagina-guias .classe { /* Deixa imagem sem fundo branco */
+    background: transparent;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer; /* Mãozinha ao passar mouse */
+    display: inline-flex;
+    flex-direction: column;
+    padding-inline: 21px; /* TEMP: ajusta quebra de linha (revisar responsividade) */
+    gap: 8px;
+    align-items: center;
+}
+
+.pagina-guias .classe span { 
+    color: #e0e0e0;
+    transition: all 1s ease;
+    margin-bottom: 20px;
+}
+
+.pagina-guias .classe:hover { /* Efeito nos botões */
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.6));
+}

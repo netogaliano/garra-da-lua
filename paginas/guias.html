@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garra da Lua | Guilda WoW Warmane</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="pagina-guias">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="inicio">Início</a></li>
+                <li><a href="guias.html" id="guias">Guias</a></li>
+                <li><a href="#" id="progressao">Progressão</a></li>
+                <li><a href="#" id="recrutamento">Recrutamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="apresentacao">
+            <h2>Guias de Classes</h2>
+            <p>Explore guias detalhados de todas as classes de World of Warcraft e descubra qual delas melhor se encaixa no seu estilo de jogo para iniciar sua jornada épica pelas terras de Azeroth.</p>
+            <div class="classes"> <!-- class agrupa elementos-->
+                <button 
+                class="classe" data-classe="guerreiro">
+                <img src="../imagens/guerreiro.png" alt="guerreiro">
+                <span>Guerreiro</span>
+                </button> 
+                <button 
+                class="classe" data-classe="paladino">
+                <img src="../imagens/paladino.png" alt="paladino">
+                <span>Paladino</span>
+                </button>
+                <button 
+                class="classe" data-classe="druida">
+                <img src="../imagens/druida.png" alt="druida">
+                <span>Druida</span>
+                </button>
+                <button 
+                class="classe" data-classe="shaman">
+                <img src="../imagens/shaman.png" alt="shaman">
+                <span>Shaman</span>
+                </button>
+                <button 
+                class="classe" data-classe="mago">
+                <img src="../imagens/mago.png" alt="mago">
+                <span>Mago</span>
+                </button>
+                <button 
+                class="classe" data-classe="sacerdote">
+                <img src="../imagens/sacerdote.png" alt="sacerdote">
+                <span>Sacerdote</span>
+                </button>
+                <button
+                class="classe" data-classe="bruxo">
+                <img src="../imagens/bruxo.png" alt="bruxo">
+                <span>Bruxo</span>
+                </button>
+                <button
+                class="classe" data-classe="cavaleirodamorte">
+                <img src="../imagens/cavaleirodamorte.png" alt="cavaleiro da morte">
+                <span>Cavaleiro da Morte</span>
+                </button>
+                <button
+                class="classe" data-classe="ladino">
+                <img src="../imagens/ladino.png" alt="ladino">
+                <span>Ladino</span>
+                </button>
+                <button
+                class="classe" data-classe="cacador">
+                <img src="../imagens/cacador.png" alt="caçador">
+                <span>Caçador</span>
+                </button>
+            </div> <!-- data- guarda as informações -->
+
+            <div id="conteudo"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Garra da Lua - Todos os direitos reservados</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/guias-data.js"></script>
+</body>    
